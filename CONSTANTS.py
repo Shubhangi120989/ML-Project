@@ -26,7 +26,7 @@ MLP_LEARNING_RATE = 0.01
 MLP_DECAY = 0.0
 MLP_MOMENTUM = 0.0
 MLP_DROPOUT = 0.2
-MLP_LOSS_FUNCTION = 'categorical_crossentropy'
+MLP_LOSS_FUNCTION = 'binary_crossentropy'
 MLP_ONE_SHOT = True
 
 ########################################################
