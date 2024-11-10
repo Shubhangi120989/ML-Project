@@ -5,7 +5,7 @@ from mlpnas import MLPNAS
 from CONSTANTS import TOP_N
 
 
-data = pd.read_excel('DATASETS\without-embedding.xlsx')
+data = pd.read_excel('DATASETS/without-embedding.xlsx')
 x = data.drop(columns=['isBestSeller'], inplace=False).values
 y = data['isBestSeller'].values
 
