@@ -5,8 +5,8 @@ from mlpnas import MLPNAS
 from CONSTANTS import TOP_N
 
 
-data = pd.read_csv('DATASETS/wine-quality.csv')
-x = data.drop(columns=['isBestSeller','categoryName'], inplace=False).values
+data = pd.read_excel('DATASETS\without-embedding.xlsx')
+x = data.drop(columns=['isBestSeller'], inplace=False).values
 y = data['isBestSeller'].values
 
 nas_object = MLPNAS(x, y)
