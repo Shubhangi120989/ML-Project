@@ -47,7 +47,7 @@ class MLPSearchSpace(object):
         for key in sequence:
             decoded_sequence.append(values[keys.index(key)])
         return decoded_sequence
-
+    
 
 class MLPGenerator(MLPSearchSpace):
 

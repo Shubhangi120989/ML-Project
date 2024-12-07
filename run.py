@@ -6,8 +6,9 @@ from CONSTANTS import TOP_N
 
 
 data = pd.read_excel('DATASETS/toBeUsed.xlsx')
-x = data.drop(columns=['isBestSeller'], inplace=False).values
+x = data.drop(columns=['isBestSeller',], inplace=False).values
 y = data['isBestSeller'].values
+
 
 nas_object = MLPNAS(x, y)
 data = nas_object.search()
